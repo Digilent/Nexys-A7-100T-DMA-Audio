@@ -10,9 +10,14 @@ To use this demo, the Nexys A7-100T must be connected to a computer over MicroUS
 
 Review statements printed over USB-UART for more information on how to operate this demo.
 
-This demo is a work in progress, and as such only supports WAV files with 96KHz sample rates. Eight and 16 bit audio is supported, but 16-bit data is truncated down to 8 bits, which may result in poor sound quality.
-
 Files found at [audiocheck.net](https://www.audiocheck.net/testtones_highdefinitionaudio.php) were used to test the demo.
+
+Known Issues
+------------
+
+* This demo is a work in progress, and as such only supports WAV files with 96KHz sample rates. Eight and 16 bit audio is supported, but 16-bit data is truncated down to 8 bits, which may result in poor sound quality.
+* Hardware Tone Generation functionality is not currently working.
+* Wave files are not stored after playback.
 
 Requirements
 ------------
