@@ -14,9 +14,9 @@ module fifo2audpwm #(
     (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 M_FIFO_READ RD_EN" *)
     output fifo_rd_en, // FIFO Read Enable (required)
     (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 M_FIFO_READ EMPTY" *)
-    input fifo_empty // FIFO Empty flag (optional)
-    //    (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 M_FIFO_READ ALMOST_EMPTY" *)
-    //    input fifo_almost_empty // FIFO Almost Empty flag (optional)
+    input fifo_empty, // FIFO Empty flag (optional)
+    (* X_INTERFACE_INFO = "xilinx.com:interface:fifo_read:1.0 M_FIFO_READ ALMOST_EMPTY" *)
+    input fifo_almost_empty // FIFO Almost Empty flag (optional)
 );
     reg [DATA_WIDTH+1:0] count = 0;
     reg [DATA_WIDTH:0] duty [3:0];
